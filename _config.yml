@@ -1,6 +1,6 @@
 # Site settings
 title: Zexi Blog
-SEOTitle: 泽熙的博客 | Zexi Blog
+SEOTitle: Zexi Blog | 泽熙的博客
 header-img: img/home-bg.jpg
 email: zexihan@163.com
 description: "关于计算机科学与艺术 | 韩泽熙，All about Computer Science and Art | 这里是 @韩泽熙 的个人博客，与你一起发现更大的世界。"
@@ -12,7 +12,7 @@ baseurl: "/blog"                             # for example, '/blog' if your blog
 
 # SNS settings
 RSS: false
-weibo_username:     1919894290
+weibo_username:     zexihan
 zhihu_username:     zexihan
 github_username:    zexihan
 #twitter_username:  zexihan
@@ -83,37 +83,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Su",
-        href: "http://su.gallery/"
-    },{
-        title: "乱序",
-        href: "http://mida.re/"
-    },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "前端神盾局",
-        href: "http://wepiaofei.github.io/blog/"
+        title: "",
+        href: ""
     }
 ]

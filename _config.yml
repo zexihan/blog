@@ -70,7 +70,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "写写代码，读读Paper。世界那么大，我想去看看。"
-sidebar-avatar: '/img/zexihan.jpg'     # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: "/img/zexihan.jpg"     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

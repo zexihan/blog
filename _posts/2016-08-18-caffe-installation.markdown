@@ -25,7 +25,7 @@ Before the installation, I strongly suggest your computer equiped with a brand n
 
 Besides I recommend you install the latest version of MATLAB and Python correctly on your Ubuntu before installing Caffe for extensive development.
 
- First, open the terminal and type the following codes to keep your software updated on your Ubuntu.
+First, open the terminal and type the following codes to keep your software updated on your Ubuntu.
 
 ```
 $ sudo su
@@ -36,7 +36,7 @@ Then, let's do it!
 
 ### Download Caffe
 
-Download Caffe from its official Github page: https://github.com/BVLC/caffe
+Download Caffe from its official Github page: [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe "Title")
 
 Unzip it to your home directory for your convenience.
 
@@ -56,10 +56,13 @@ install ATLAS by
 ```
 $ sudo apt-get install libatlas-base-dev
 ```
-
 or install OpenBLAS or MKL for better CPU performance.
 
-Python (optional): if you use the default Python you will need to sudo apt-get install the python-dev package to have the Python headers for building the pycaffe interface.
+Python (optional): if you use the default Python you will need to 
+```
+$ sudo apt-get install python-dev 
+```
+to have the Python headers for building the pycaffe interface.
 
 ### Remaining dependencies, 14.04
 

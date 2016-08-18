@@ -46,11 +46,11 @@ Unzip it to your home directory for your convenience.
 $ sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 $ sudo apt-get install --no-install-recommends libboost-all-dev
 ```
-### CUDA: 
+### CUDA
 
 Install via the NVIDIA package instead of apt-get to be certain of the library and driver versions. Install the library and latest driver separately; the driver bundled with the library is usually out-of-date. This can be skipped for CPU-only installation.
 
-### BLAS: 
+### BLAS
 
 install ATLAS by 
 ```

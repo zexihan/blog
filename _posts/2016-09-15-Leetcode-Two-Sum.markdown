@@ -33,7 +33,7 @@ public class Solution {
 
         for (int i = 0; i < numbers.length; i++) {
             if (map.get(numbers[i]) != null) {
-                int[] result = {map.get(numbers[i]) + 1, i + 1};
+                int[] result = {map.get(numbers[i]), i};
                 return result;
             }
             map.put(target - numbers[i], i);

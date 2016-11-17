@@ -33,6 +33,7 @@ tags:
     * void remove() Removes from the underlying collection the last element returned by this iterator (optional operation).
 
 每当我们产生一个遍历器，就开始了一个遍历的过程。我们通过hasNext方法来检测是否还有未遍历的元素，然后通过next方法来返回下一个未遍历的元素，还可以选择性地通过remove方法删除元素。
+
 * 对比（equals）
 * 哈希（hashCode）
 * 长度（size）

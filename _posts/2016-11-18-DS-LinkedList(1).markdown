@@ -42,7 +42,6 @@ tags:
 常见方法：
 
 * O(1)
-
 ```java
 addFirst(element: Object) : void
 addLast(element: Object) : void
@@ -53,7 +52,6 @@ removeLast() : Object
 ```
 
 * O(N)
-
 ```java
 insertAfter(AnyType key, AnyType toInsert) : void
 insertBefore(AnyType key, AnyType toInsert) (triky) : void
@@ -90,7 +88,7 @@ private static class Node {
 }
 ```
 
-i.	Methods
+i. Methods
 
 ii.	Constructor 有了内部类，我们就可以利用它来实现LinkedList了。我们只须对每一个实例保存该list的第一个node，也就是head node，就可以实现它的所有方法。
 
@@ -99,7 +97,7 @@ public MySinglyLinkedList() {
 head = null;
 }
 ```
-	addFirst 像addFirst这样的方法，实现方式是非常直观的，只要完成“重新链接”的过程就可以了。
+    * addFirst 像addFirst这样的方法，实现方式是非常直观的，只要完成“重新链接”的过程就可以了。
 
 ```java
 public void addFirst(AnyType data) {
@@ -107,7 +105,7 @@ public void addFirst(AnyType data) {
 }
 ```
 
-iii.	insertBefore 一个比较难实现的方法是insertBefore，就是先找到一个元素，再往它前面添加一个元素。难度在于，当我们找到这个元素时，我们已经失去了它自己的链接，只有它自带的next链接。那么，我们在找它的时候，就需要能够一次“看到”两个元素，当第二个元素符合搜索条件时，在第一和第二个元素中间插入新元素。（画图讲思路）
+iii. insertBefore 一个比较难实现的方法是insertBefore，就是先找到一个元素，再往它前面添加一个元素。难度在于，当我们找到这个元素时，我们已经失去了它自己的链接，只有它自带的next链接。那么，我们在找它的时候，就需要能够一次“看到”两个元素，当第二个元素符合搜索条件时，在第一和第二个元素中间插入新元素。（画图讲思路）
 
 ```java
 public void insertBefore(AnyType key, AnyType toInsert) {
@@ -127,7 +125,7 @@ public void insertBefore(AnyType key, AnyType toInsert) {
 }
 ```
 
-* remove一个特定元素，也就是搜索之后再删除
+    * remove一个特定元素，也就是搜索之后再删除
 
 ```java
 public void remove(AnyType key) {

@@ -71,27 +71,27 @@ Vector就是一种线程安全的动态数组（Java中就是线程安全的Arra
 
 ```java
 public E push(E item) {
-addElement(item);
-return item;
+    addElement(item);
+    return item;
 }
 
 public synchronized E pop() {
-E obj;
-int len = size();
-obj = peek();
-removeElementAt(len - 1);
-return obj;
+    E obj;
+    int len = size();
+    obj = peek();
+    removeElementAt(len - 1);
+    return obj;
 }
 
 public synchronized E peek() {
 int len = size();
-if (len == 0)
-throw new EmptyStackException();
-return elementAt(len - 1);
+    if (len == 0)
+        throw new EmptyStackException();
+    return elementAt(len - 1);
 }
 
 public boolean isEmpty() {
-return size() == 0;
+    return size() == 0;
 }
 ```
 
@@ -111,30 +111,30 @@ return size() == 0;
 ```java
 @Override
 public void push(AnyType e) {
-if(top == array.length-1)
-throw new StackException("Stack is full");
-array[++top] = e;
+    if(top == array.length-1)
+        throw new StackException("Stack is full");
+    array[++top] = e;
 }
 
 @Override
 public AnyType pop() {
-if(isEmpty())
-return null;
-AnyType e = array[top];
-array[top] = null;
-top--;
-return e;
+    if(isEmpty())
+        return null;
+    AnyType e = array[top];
+    array[top] = null;
+    top--;
+    return e;
 }
 
 public AnyType peek() {
-if(isEmpty())
-throw new StackException("Stack is full");
-return array[top];
+    if(isEmpty())
+        throw new StackException("Stack is full");
+    return array[top];
 }
 
 @Override
 public boolean isEmpty() {
-return top == -1;
+    return top == -1;
 }
 ```
 

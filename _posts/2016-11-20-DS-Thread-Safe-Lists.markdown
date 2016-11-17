@@ -26,9 +26,9 @@ Java为我们提供了两个方便的机制，提供线程安全的List。
 1.	Collections.synchronizedList 
 Returns a synchronized (thread-safe) list backed by the specified list. In order to guarantee serial access, it is critical that all access to the backing list is accomplished through the returned list.
 
-```java
-List list = Collections.synchronizedList(new LinkedList(...));
-```
+  ```java
+  List list = Collections.synchronizedList(new LinkedList(...));
+  ```
 
 2.	Vector怎么实现线程安全的
 * Vector implements a dynamic array. It is similar to ArrayList, but with two differences:
@@ -36,5 +36,7 @@ List list = Collections.synchronizedList(new LinkedList(...));
   *	Vector contains many legacy methods that are not part of the collections framework.
 * Vector proves to be very useful if you don't know the size of the array in advance or you just need one that can change sizes over the lifetime of a program.
 * //不讲了Fail fast Vector is fail fast. If the Vector is structurally modified at any time after the Iterator is created, in any way except through the Iterator’s own remove or add methods, the Iterator will throw a ConcurrentModificationException.
+
 ArrayList iterator is also fail-fast.
+
 *148LinkedList用merge来sort LinkedList 不讲代码了

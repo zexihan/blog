@@ -41,6 +41,7 @@ http://tutorialspointexamples.com/queue-interface-in-java/
 *	poll(): Returns and removes the head of this queue. Returns null if this queue is empty.
 *	element(): Returns but does not removes the head of this queue. It throws an exception if this queue is empty.
 *	peek(): Returns but does not removes the head of this queue. Returns null if this queue is empty.
+
 ### 实现
 
 1.	LinkedList 用LinkedList实现Queue，和实现Stack类似，但更复杂一些，因为Stack是在同一头操作，而LinkedList不是。 如果我们把排队操作放在list尾部，排到了就从头部删除，那么要enqueue就得先traverse到尾部，时间O(N)，没效率。 如何改进呢？保持一个到尾部的Node：rear即可。每次enqueue，用rear.next把newNode连上，然后rear = newNode。dequeue直接弹head的data，然后head = head.next。
@@ -62,39 +63,40 @@ http://www.jiuzhang.com/solutions/implement-queue-by-two-stacks/
 
 ```java
 public class Queue {
-private Stack<Integer> stack1;
-private Stack<Integer> stack2;
+    private Stack<Integer> stack1;
+    private Stack<Integer> stack2;
 
-public Queue() {
-stack1 = new Stack<Integer>();
-stack2 = new Stack<Integer>();
-}
+    public Queue() {
+        stack1 = new Stack<Integer>();
+        stack2 = new Stack<Integer>();
+    }
 
-private void stack2ToStack1() {
-while (!stack2.empty()) {
-stack1.push(stack2.pop());
-}
-}
+    private void stack2ToStack1() {
+        while (!stack2.empty()) {
+            stack1.push(stack2.pop());
+        }
+    }
 
-public void push(int number) {
-stack2.push(number);
-}
+    public void push(int number) {
+        stack2.push(number);
+    }
 
-public int pop() {
-if (stack1.empty() == true) {
-this.stack2ToStack1();
-}
-return stack1.pop();
-}
+    public int pop() {
+        if (stack1.empty() == true) {
+            this.stack2ToStack1();
+        }
+        return stack1.pop();
+    }
 
-public int top() {
-if (stack1.empty() == true) {
-this.stack2ToStack1();
-}
-return stack1.peek();
-}
+    public int top() {
+        if (stack1.empty() == true) {
+            this.stack2ToStack1();
+        }
+        return stack1.peek();
+    }
 }
 ```
+
 ### 注意事项
 
 1.	Queue不是线程安全的。Java中线程安全的Queue是Blocking Queue。 Blocking Queue 阻塞队列(BlockingQueue)是一个支持两个附加操作的队列。这两个附加的操作是：在队列为空时，获取元素的线程会等待队列变为非空。当队列满时，存储元素的线程会等待队列可用。阻塞队列常用于生产者和消费者的场景，生产者是往队列里添加元素的线程，消费者是从队列里拿元素的线程。阻塞队列就是生产者存放元素的容器，而消费者也只从容器里拿元素。这两个方法分别是put()和take()。

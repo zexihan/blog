@@ -16,12 +16,13 @@ tags:
 ## LinkedList
 
 LinkedList类是双向列表,列表中的每个节点都包含了对前一个和后一个元素的引用.
+
 LinkedList的构造函数如下
 
 1. public LinkedList():  ——生成空的链表
 2. public LinkedList(Collection col):  复制构造函数
 
->1、获取链表的第一个和最后一个元素
+### 1、获取链表的第一个和最后一个元素
 
 ```java
 import java.util.LinkedList;  
@@ -41,7 +42,7 @@ public class LinkedListTest{
   }  
 }  
 ```
->2、获取链表元素 
+### 2、获取链表元素 
 
 ```java
 for (String str: lList) {  
@@ -49,7 +50,7 @@ for (String str: lList) {
     } 
 ```
 
->3、从链表生成子表
+### 3、从链表生成子表
 
 ```java 
 List subl = lList.subList(1, 4);  
@@ -59,13 +60,22 @@ List subl = lList.subList(1, 4);
     System.out.println(lList);  
 ```
 
->4、添加元素：添加单个元素
- 如果不指定索引的话，元素将被添加到链表的最后.
+### 4、添加元素：添加单个元素
+
+如果不指定索引的话，元素将被添加到链表的最后.
+
+```java
 public boolean add(Object element)
 public boolean add(int index, Object element)
+```
+
 也可以把链表当初栈或者队列来处理:
+
+```java
 public boolean addFirst(Object element)
 public boolean addLast(Object element)
+```
+
 addLast()方法和不带索引的add()方法实现的效果一样.
 
 ```java
@@ -84,7 +94,7 @@ public class LinkedListTest{
   }  
 } 
 ```
->5、删除元素
+###　5、删除元素
 
 ```java
 public Object removeFirst()  
@@ -107,7 +117,7 @@ public class MainClass {
   }  
 }  
 ```
->6、使用链表实现栈效果
+### 6、使用链表实现栈效果
 
 ```java
 import java.util.LinkedList;  
@@ -137,7 +147,7 @@ class StackL {
 }  
 ```
 
->7、使用链表来实现队列效果
+### 7、使用链表来实现队列效果
 
 ```java
 import java.util.LinkedList;  
@@ -164,7 +174,7 @@ class Queue {
 }  
 ```
 
->8、将LinkedList转换成ArrayList
+### 8、将LinkedList转换成ArrayList
 
 ```java
 ArrayList<String> arrayList = new ArrayList<String>(linkedList);  
@@ -172,13 +182,13 @@ ArrayList<String> arrayList = new ArrayList<String>(linkedList);
       System.out.println("s = " + s);  
     }
 ```  
->9、删掉所有元素：清空LinkedList
+### 9、删掉所有元素：清空LinkedList
 
 ```java
     lList.clear();
 ```
 
->10、删除列表的首位元素
+### 10、删除列表的首位元素
 
 ```java
 import java.util.LinkedList;  
@@ -202,7 +212,7 @@ public class Main {
 }  
 ```
 
->11、根据范围删除列表元素
+### 11、根据范围删除列表元素
 
 ```java
 import java.util.LinkedList;  
@@ -220,7 +230,7 @@ public class Main {
   }  
 } 
 ```
->12、删除链表的特定元素
+### 12、删除链表的特定元素
 
 ```java
 import java.util.LinkedList;  
@@ -242,7 +252,7 @@ public class Main {
 }  
 ```
 
->13、将LinkedList转换为数组，数组长度为0
+### 13、将LinkedList转换为数组，数组长度为0
 
 ```java
 import java.util.LinkedList;  
@@ -262,7 +272,7 @@ public class Main {
 }  
 ```
 
->14、将LinkedList转换为数组，数组长度为链表长度
+### 14、将LinkedList转换为数组，数组长度为链表长度
 
 ```java
 import java.util.LinkedList;  
@@ -282,7 +292,7 @@ public class Main {
 } 
 ```
 
->15、将LinkedList转换成ArrayList
+### 15、将LinkedList转换成ArrayList
 
 ```java
 import java.util.ArrayList;  
@@ -302,7 +312,7 @@ public class Main {
 } 
 ```
 
->16、实现栈
+### 16、实现栈
 
 ```java
 import java.util.Collections;  
@@ -318,7 +328,7 @@ public class Main {
 } 
 ```
 
->17、实现队列
+### 17、实现队列
 
 ```java
 import java.util.LinkedList;  
@@ -334,7 +344,7 @@ public class Main {
 }
 ```
 
->18 、同步方法
+### 18 、同步方法
 
 ```java
 import java.util.Collections;  
@@ -350,7 +360,7 @@ public class Main {
 } 
 ```
 
->19、查找元素位置
+### 19、查找元素位置
 
 ```java 
 import java.util.LinkedList;  
@@ -370,7 +380,7 @@ public class Main {
 }
 ```
 
->20、替换元素
+### 20、替换元素
 
 ```java
 import java.util.LinkedList;  
@@ -390,7 +400,7 @@ public class Main {
 } 
 ```
 
->21、链表添加对象
+### 21、链表添加对象
 
 ```java
 import java.util.LinkedList;  
@@ -425,7 +435,7 @@ class MailList {
 } 
 ```
 
->22、确认链表是否存在特定元素
+### 22、确认链表是否存在特定元素
 
 ```java
 import java.util.LinkedList;  
@@ -448,7 +458,7 @@ public class Main {
 }  
 ```
 
->23、根据链表元素生成对象数组
+### 23、根据链表元素生成对象数组
 
 ```java
 Object[] objArray = lList.toArray();  
@@ -457,7 +467,7 @@ for (Object obj: objArray) {
 }  
 ```
 
->24、链表多线程
+### 24、链表多线程
 
 ```java
 
@@ -500,7 +510,7 @@ public class Main {
 }  
 ```
 
->25、优先级链表（来自JBOSS）
+### 25、优先级链表（来自JBOSS）
 
 ```java
 import java.util.ArrayList;  
@@ -690,7 +700,7 @@ public class BasicPriorityLinkedList {
 }
 ```
 
->26、生成list的帮助类（来自google）
+### 26、生成list的帮助类（来自google）
 
 ```java
 import java.util.ArrayList;  

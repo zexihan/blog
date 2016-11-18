@@ -15,6 +15,8 @@ tags:
 
 ## 探索equals()和hashCode()方法
 
+http://blog.csdn.net/speedme/article/details/22528047
+
 ### equals()和hashCode()区别？
 
 equals()：反映的是对象或变量具体的值，即两个对象里面包含的值--可能是对象的引用，也可能是值类型的值。
@@ -124,7 +126,7 @@ Hash表数据结构常识：
 
 四、如果不需要有序遍历数据，并且可以提前预测数据量的大小，那么哈希表在速度和易用性方面是无与伦比的。 
 
-一、为什么HashCode对于对象是如此的重要： 
+**为什么HashCode对于对象是如此的重要** 
 
 一个对象的HashCode就是一个简单的Hash算法的实现，虽然它和那些真正的复杂的Hash算法相比还不能叫真正的算法，它如何实现它，不仅仅是程序员的编程水平问题， 
 
@@ -136,7 +138,9 @@ Hash表数据结构常识：
 
 Hashtable在存储数据时，一般先将该对象的HashCode和0x7FFFFFFF做与操作，因为一个对象的HashCode可以为负数，这样操作后可以保证它为一个正整数.然后以Hashtable的长度取模，得到该对象在Hashtable中的索引.
 
+```java
 index = (o.hashCode() & 0x7FFFFFFF)%hs.length; 
+```
 
 这个对象就会直接放在Hashtable的每index位置，对于写入，这和数组一样，把一个对象放在其中的第index位置，但如果是查询，经过同样的算法，Hashtable可以直接从第index取得这个对象，而数组却要做循环比较.所以对于数据量稍大时，Hashtable的查询比数组具有更高的性能. 
 
@@ -166,7 +170,7 @@ return Attribute1.HashCode() Attribute1.HashCode()..[ super.HashCode()]，我们
 
 请记住：如果你想有效的使用HashMap，你就必须重写在其的HashCode()。 
 
-还有两条重写HashCode()的原则： 
+还有两条**重写HashCode()的原则**： 
 
 不必对每个不同的对象都产生一个唯一的hashcode，只要你的HashCode方法使get()能够得到put()放进去的内容就可以了。即“不为一原则”。生成hashcode的算法尽量使hashcode的值分散一些， 不要很多hashcode都集中在一个范围内，这样有利于提高HashMap的性能。即“分散原则”。至于第二条原则的具体原因，有兴趣者可以参考Bruce Eckel的《Thinking in Java》，
 

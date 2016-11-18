@@ -15,6 +15,8 @@ tags:
 
 ## Set, List and Map
 
+http://blog.csdn.net/speedme/article/details/22398395
+
 java集合的主要分为三种类型：
 
 * Set（集）
@@ -135,7 +137,7 @@ while(it.hasNext()){
 }
 ```
 
-Set的功能方法 
+**Set的功能方法**
 
 Set具有与Collection完全一样的接口，因此没有任何额外的功能，不像前面有两个不同的List。实际上Set就是Collection,只 是行为不同。(这是继承与多态思想的典型应用：表现不同的行为。)Set不保存重复的元素(至于如何判断元素相同则较为负责) 
 
@@ -175,7 +177,7 @@ while(it.hashNext()){
 } 
 ```
 
-List的功能方法 
+**List的功能方法** 
 
 实际上有两种List：一种是基本的ArrayList,其优点在于随机访问元素，另一种是更强大的LinkedList,它并不是为快速随机访问设计的，而是具有一套更通用的方法。
 
@@ -187,7 +189,7 @@ List的功能方法
 
 Map 是一种把键对象和值对象映射的集合，它的每一个元素都包含一对键对象和值对象。 Map没有继承于Collection接口 从Map集合中检索元素时，只要给出键对象，就会返回对应的值对象。 
 
-Map 的常用方法： 
+Map 的常用方法：
 
 1 添加，删除操作： 
 
@@ -202,7 +204,7 @@ Object put(Object key, Object value)： 向集合中加入元素
 
 Object get(Object key)：获得与关键字key相关的值 。Map集合中的键对象不允许重复，也就说，任意两个键对象通过equals()方法比较的结果都是false.，但是可以将任意多个键独享映射到同一个值对象上。 
 
-Map的功能方法
+**Map的功能方法**
 
 方法put(Object key, Object value)添加一个“值”(想要得东西)和与“值”相关联的“键”(key)(使用它来查找)。方法get(Object key)返回与给定“键”相关联的“值”。可以用containsKey()和containsValue()测试Map中是否包含某个“键”或“值”。 标准的Java类库中包含了几种不同的Map：HashMap, TreeMap, LinkedHashMap, WeakHashMap, IdentityHashMap。它们都有同样的基本接口Map，但是行为、效率、排序策略、保存对象的生命周期和判定“键”等价的策略等各不相同。 
 

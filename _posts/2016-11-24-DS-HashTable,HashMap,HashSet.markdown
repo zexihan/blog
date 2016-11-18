@@ -63,7 +63,7 @@ int i = indexFor(hash, table.length);
 3. 结构上的更改指的是删除或者插入一个元素，这样会影响到map的结构。
 
 ### 2. HashSet和HashMap的区别
----------------------------------------------------------
+
 在分析他们的区别之前，我们首先分别来简单介绍一下他们俩。（后面我会详细的结合源码分析他俩）
 
 * **什么是HashSet？**
@@ -197,29 +197,34 @@ void addEntry(int hash, K key, V value, int bucketIndex)
 
 **什么是Map.Entry？**
 
-```java
+
 Map是java中的接口，Map.Entry是Map的一个内部接口。  
-         Map提供了一些常用方法，如keySet()、entrySet()等方法，keySet()方法返回值是Map中key值的集合；entrySet()的返回值也是返回一个Set集合，此集合的类型为Map.Entry。  
-         Map.Entry是Map声明的一个内部接口，此接口为泛型，定义为Entry<K,V>。它表示Map中的一个实体（一个key-value对）。接口中有getKey(),getValue方法。  
+Map提供了一些常用方法，如keySet()、entrySet()等方法，keySet()方法返回值是Map中key值的集合；entrySet()的返回值也是返回一个Set集合，此集合的类型为Map.Entry。  
+Map.Entry是Map声明的一个内部接口，此接口为泛型，定义为Entry<K,V>。它表示Map中的一个实体（一个key-value对）。接口中有getKey(),getValue方法。  
            
-        由以上可以得出，遍历Map的常用方法：  
-       1.  Map map = new HashMap();  
-           Irerator iterator = map.entrySet().iterator();  
-           while(iterator.hasNext()) {  
-                   Map.Entry entry = iterator.next();  
-                   Object key = entry.getKey();  
-                   //  
-           }  
-       2.Map map = new HashMap();   
-           Set  keySet= map.keySet();  
-           Irerator iterator = keySet.iterator;  
-           while(iterator.hasNext()) {  
-                   Object key = iterator.next();  
-                   Object value = map.get(key);  
-                   //  
-           }  
-   
-       另外，还有一种遍历方法是，单纯的遍历value值，Map有一个values方法，返回的是value的Collection集合。通过遍历collection也可以遍历value,如  
+由以上可以得出，遍历Map的常用方法：
+
+```java  
+    1.  Map map = new HashMap();  
+        Irerator iterator = map.entrySet().iterator();  
+        while(iterator.hasNext()) {  
+                Map.Entry entry = iterator.next();  
+                Object key = entry.getKey();  
+                //  
+        }  
+    2.Map map = new HashMap();   
+        Set  keySet= map.keySet();  
+        Irerator iterator = keySet.iterator;  
+        while(iterator.hasNext()) {  
+                Object key = iterator.next();  
+                Object value = map.get(key);  
+                //  
+        }  
+```
+
+另外，还有一种遍历方法是，单纯的遍历value值，Map有一个values方法，返回的是value的Collection集合。通过遍历collection也可以遍历value,如  
+
+```java      
       Map map = new HashMap();  
       Collection c = map.values();  
       Iterator iterator = c.iterator();  
@@ -230,7 +235,9 @@ Map是java中的接口，Map.Entry是Map的一个内部接口。
 
 Map.Entry是Map内部定义的一个接口，专门用来保存key→value的内容。Map.Entry的定义如下：
 
+```java
     public static interface Map.Entry<K,V> 
+```
 
 Map.Entry是使用static关键字声明的内部接口，此接口可以由外部通过"外部类.内部类"的形式直接调用。在本接口中提供了如表13-12所示的方法。
 
@@ -301,7 +308,7 @@ HashMap(int initialCapacity, float loadFactor)：以指定初始容量、指定�
 	 table = new Entry[capacity]; 			 // ①
 	 init(); 
  }
- ```
+```
 
 上面代码中粗体字代码包含了一个简洁的代码实现：找出大于 initialCapacity 的、最小的 2 的 n 次方值，并将其作为 HashMap 的实际容量（由 capacity 变量保存）。例如给定 initialCapacity 为 10，那么该 HashMap 的实际容量就是 16。
 

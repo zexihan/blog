@@ -62,6 +62,7 @@ a hash table (also hash map) is a data structure used to implement an **_associa
 | Hash table (Worst case) | O(N)  | O(N)   |O(N)    |O(N)    |
 
 ### Hash function
+
 The idea of hashing is to distribute the entries (key/value pairs) across an array of buckets. Given a key, the algorithm computes an index that suggests where the entry can be found:
 
 ```java
@@ -72,11 +73,15 @@ index = hash % array_size
 我们知道理想情况下，hash function 是将每一个key分配到单独的bucket下。但是理想情况很少发生（除非bucket是确定的）。这种不同的key分配到同一个bucket下叫做hash collisions。
 
 ### Collision Resolution：
-#### Separate chaining
+
+##### Separate chaining
+
 In the method known asseparate chaining, each bucket is independent, and has some sort of list of entries with the same index. The time for hash table operations is the time to find the bucket (which is constant) plus the time for the list operation. (The technique is also calledopen hashing orclosed addressing.)
 
 In a good hash table, each bucket has zero or one entries, and sometimes two or three, but rarely more than that. Therefore, structures that are efficient in time and space for these cases are preferred. Structures that are efficient for a fairly large number of entries are not needed or desirable. If these cases happen often, the hashing is not working well, and this needs to be fixed.
+
 ##### Separate chaining with linked lists
+
 Chained hash tables with linked lists are popular because they require only basic data structures with simple algorithms, and can use simple hash functions that are unsuitable for other methods.
 
 The cost of a table operation is that of scanning the entries of the selected bucket for the desired key. If the distribution of keys is sufficiently uniform, the average cost of a lookup depends only on the average number of keys per bucket—that is, on theload factor.
@@ -90,11 +95,13 @@ The bucket chains are often implemented as ordered lists, sorted by the key fiel
 Chained hash tables also inherit the disadvantages of linked lists. When storing small keys and values, the space overhead of the next pointer in each entry record can be significant. An additional disadvantage is that traversing a linked list has poor cache performance, making the processor cache ineffective.
 
 ##### Separate chaining with list head cells
+
 Some chaining implementations store the first record of each chain in the slot array itself. The number of pointer traversals is decreased by one for most cases. The purpose is to increase cache efficiency of hash table access.
 
 The disadvantage is that an empty bucket takes the same space as a bucket with one entry. To save memory space, such hash tables often have about as many slots as stored entries, meaning that many slots have two or more entries.
 
 ##### Separate chaining with other structures
+
 Instead of a list, one can use any other data structure that supports the required operations. For example, by using a self-balancing tree, the theoretical worst-case time of common hash table operations (insertion, deletion, lookup) can be brought down to O(log n) rather than O(n). However, this approach is only worth the trouble and extra memory cost if long delays must be avoided at all costs (e.g. in a real-time application), or if one must guard against many entries hashed to the same slot (e.g. if one expects extremely non-uniform distributions, or in the case of web sites or other publicly accessible services, which are vulnerable to malicious key distributions in requests).
 
 The variant called array hash table uses a dynamic array to store all the entries that hash to the same slot.Each newly inserted entry gets appended to the end of the dynamic array that is assigned to the slot. The dynamic array is resized in an exact-fit manner, meaning it is grown only by as many bytes as needed. Alternative techniques such as growing the array by block sizes or pages were found to improve insertion performance, but at a cost in space. This variation makes more efficient use of CPU caching and the translation lookaside buffer (TLB), because slot entries are stored in sequential memory positions. It also dispenses with the next pointers that are required by linked lists, which saves space. Despite frequent array resizing, space overheads incurred by operating system such as memory fragmentation, were found to be small.

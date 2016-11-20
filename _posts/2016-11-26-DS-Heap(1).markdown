@@ -46,7 +46,9 @@ Heap的基本功能： Add: O(logN） PopTop(Max or Min): O(logN)
 ### 实现
 
 1.	表示方法和基本操作 操作-用Array-用Linked Node的结构对比表，把index写在树的旁边。 我们可以用Array来实现堆。 奇怪，树不是Linked么？为何可以用Array？ 正是利用了堆几乎是完全树的性质：除了最后一层，每一层的数目都是恒定的，所以我们可以算出每一个节点对应到array里面的index。 实现 Array实现堆可以省掉指针的空间，而且不影响节点之间的连通。
- 
+
+![1](img/in-post/2016-11-26-DS-Heap(1)/1.png)
+
 * its left child is located at 2*k index
 * its right child is located at 2*k+1. index
 * its parent is located at k/2 index

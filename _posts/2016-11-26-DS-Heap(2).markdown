@@ -64,3 +64,147 @@ parent index : (index - 1) / 2
 left child : 2 * index + 1
 
 right child : 2 * index + 2
+
+### 实现
+
+#### Insertion
+
+为堆设计一个插入算法很简单，但是我们需要保证每次插入过后，依旧满足堆的顺序。插入算法分为两步：
+
+1. 将元素插入到数组中。
+2. 保证数组满足堆的顺序。
+
+对于min heap而言，如果插入插入的元素的value小于父节点的value，则需要交换这两个节点。对于包含新插入节
+
+点的每个子树，我们都要做上述检查。时间复杂度为 O (log n)。
+
+对于插入的元素为空值，依据需求可以有不同的算法设计，有时可以认为null比任何非空值小，或者比任何非空值大
+
+本文直接禁止插入空值。
+
+图3-1展示了插入值为3，9，12，7和1的元素到min heap的步骤。　　
+
+![图3-1](http://zexihan.com/blog/img/in-post/2016-11-26-DS-Heap(2)/5.png "图3-1")
+
+图3-1
+
+```java
+/**
+ * @description insertion
+ * @param element
+ * @return
+ */
+public boolean add(E element) {
+    if(null == element) 
+        return false;
+    ensureCapacityInternal(size + 1);
+    elementData[size++] = element;
+    minHeapify();
+    return true;
+}
+
+private void minHeapify() {
+    int i = size - 1;
+    while(i > 0 && compare(elementData[i], elementData[(i-1)/2]) < 0) {
+        swap(elementData, i, (i-1)/2);
+        i = (i - 1) / 2;
+    }
+}
+```
+
+#### Deletion
+
+和插入算法类似，删除一个元素过后要保证数组内的元素依旧满足堆的顺序。删除算法分为三步：
+
+1. 找出待删除元素的索引。
+2. 将堆中最后一个元素的值填到待删除元素位置。
+3. 验证所有包含被删除元素子树，确保满足堆的顺序。　
+
+图3-2展示了删除索引为0的元素的过程。
+
+![图3-2](http://zexihan.com/blog/img/in-post/2016-11-26-DS-Heap(2)/6.png "图3-2")
+
+图3-2
+
+```java
+public boolean remove(Object element) {
+    int index = indexOf(element);
+    
+    if(index == -1) {
+        return false;
+    }
+    
+    removeInternal(index);
+    
+    return true;
+}
+
+private void removeInternal(int index) {
+    elementData[index] = elementData[--size];
+    int left = 2 * index + 1;
+    int right = 2 * index + 2;
+    while(left < size && (compare(elementData[index], elementData[left]) > 0 
+            || compare(elementData[index], elementData[right]) > 0)) {
+        if(compare(elementData[left], elementData[right]) < 0) {
+            swap(elementData, index, left);
+            index = left;
+        } else {
+            swap(elementData, index, right);
+            index = right;
+        }
+        left = 2 * index + 1;
+        right = 2 * index + 2;
+    }
+}
+```
+
+#### Searching
+
+搜索一个堆，可以顺序遍数组。如果待查找元素不在堆中，则需要遍历所有元素，效率较低。
+
+因为我们表示树的数组是采用自上至下，自左至右的方式从树中获取元素，插入到数组中的，所以可以采用
+
+广度优先遍历的方式(breadth first traversal)。根据min heap的属性，父节点的值小于等于孩子节点的值。
+
+如果在查找过程中发现待查找元素不满足条件，可以直接返回-1，表示没有此元素。
+
+```java
+/**
+ * @description index of o 
+ * min-heap properties parents < children breadth first  traversal
+ * @param o
+ * @return
+ */
+public int indexOf(Object o) {
+    int start = 0;
+    int node = 1;
+    while(start < size) {
+        start = node - 1;
+        int end = start + node;
+        int count = 0;
+        while(start < size && start < end) {
+            if(start == 0) {
+                if(compare(o, elementData[start]) == 0) {
+                    return start;
+                } else if(compare(o, elementData[start]) < 0) {
+                    return -1;
+                }
+            } else {
+                if(compare(o, elementData[start]) == 0) {
+                    return start;
+                } else if (compare(o, elementData[start]) < 0 &&
+                        compare(o, getParent(start)) > 0) {
+                    count++;
+                } 
+            }
+            start++;
+        }
+        if(count == node) {
+            return -1;
+        } else {
+            node = node * 2;
+        }
+    }  
+    return -1;
+}
+```

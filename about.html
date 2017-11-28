@@ -1,157 +1,28 @@
 ---
 layout: page
 title: "About"
-description: "Hey, this is Zexi."
-header-img: "img/about-bg.jpg"
+description: "Hey, this is Hux."
+header-img: "img/about-bg-walle.jpg"
+multilingual: true
 ---
 
 <!-- Language Selector -->
-<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
     <option value="1"> 英文 English </option>
 </select>
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-
-    <!--copied from markdown -->
-    <blockquote><p>写写代码，读读Paper。</p></blockquote>
-
-    <p>Hey，我是<strong>韩泽熙</strong>，也可以叫我<strong>Liam</strong>，我是美国波士顿东北大学在读的研究生，专业是数据科学。我对人工智能领域的探索充满热情。为了使我真正进入这一领域，我努力学习各种机器学习算法并热衷于将它们应用于实际情境中给人们的生活带来方便。在留学美国之前，我获得了北京邮电大学与伦敦玛丽女王大学联合授予的一等工学学士荣誉学位。我在中科院自动化所实习期间所做的本科毕设也被推选为北邮优秀毕业设计。</p>
-
-    <h5>研究兴趣</h5>
-
-    <p>机器学习，计算机视觉，自然语言处理。如感兴趣，可以和我交流或移步至我的<a href="/portfolio">作品集</a>。</p>
-
-    <h5>简历</h5>
-
-    <ul>
-    <li><a href="http://zexihan.com/blog/attach/简历_韩泽熙.pdf">简历_韩泽熙</a></li>
-    </ul>
-
-    <h5>经历</h5>
-    
-    <ul>
-    <li>01/2017-Present 数据科学专业研究生 @ <strong>东北大学，波士顿</strong></li> 
-    <li>05/2016-07/2016 研究实习生 @ <strong>清华大学</strong></li>   
-    <li>08/2015-06/2016 研究实习生 @ <strong>中科院自动化所</strong></li>
-    <li>09/2012-07/2016 电信工程及管理专业本科生 @ <strong>伦敦玛丽女王大学</strong></li>
-    <li>09/2012-07/2016 电信工程及管理专业本科生 @ <strong>北京邮电大学</strong></li>
-    </ul>
-
-    <h5>爱好</h5>
-
-    <p>科技，美术</p>
-
+    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    <blockquote><p>Code beautified.</p></blockquote>
-
-    <p>Hi, Here is <strong>Zexi Han(韩泽熙)</strong>，you can call me <strong>Liam</strong>. I am currently a student pursuing M.S. in Data Science in Northeastern University, Boston. I am enthusiastic about exploring the power of artificial intelligence. To get myself into this field, I make efforts to gain an insight into various machine learning algorithms and have a keen interest in applying them to real-world scenarios bringing convenience to people's life. Before coming to the US, I got the Degree of Bachelor of Science (Engineering) with First Class Honors in Telecommunications Engineering with Management from the Joint Program between BUPT and QMUL. My undergraduate final project during my internship in CASIA was elected as the BUPT Outstanding Final Project.</p>
-
-    <h5>Research Interests</h5>
-
-    <p>My research interests in Machine Learning, Computer Vision & Nature Language Processing. If you are interested in these fields, contact me or refer to my <a href="/portfolio">Portfolio</a> for more details.</p>
-
-    <h5>Resumes</h5>
-
-    <ul>
-    <li><a href="http://zexihan.com/blog/attach/CV_ZexiHan.pdf">CV_ZexiHan</a></li>
-    </ul>
-
-    <h5>Experience</h5>
-    
-    <ul>
-    <li>01/2017-Present MS Candidate in Data Science @ <strong>Northeastern University, Boston</strong></li>
-    <li>05/2016-07/2016 Research Intern @ <strong>Tsinghua University</strong></li>   
-    <li>08/2015-06/2016 Research Intern @ <strong>Chinese Academy of Sciences</strong></li>
-    <li>09/2012-07/2016 BS in EE @ <strong>Queen Mary University of London</strong></li>
-    <li>09/2012-07/2016 BS in EE @ <strong>Beijing University of Posts and Telecommunications</strong></li>
-    </ul>
-
-    <h5>Hobbies</h5>
-
-    <p>Technology, Fine Arts</p>
-
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
 </div>
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
-
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
-
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
-
-    // init
-    _render();
-</script>
-
-
-
-{% if site.duoshuo_username %}
-<!-- 多说评论框 start -->
-<div class="comment">
-    <div class="ds-thread"
-    {% if site.duoshuo_username == "huxblog" %}
-        data-thread-id="1187623191091085319"
-    {% else %}
-        data-thread-key="{{site.duoshuo_username}}/about"
-    {% endif %}
-
-    data-title="{{page.title}}"
-    data-url="{{site.url}}/about/"></div>
-</div>
-<!-- 多说评论框 end -->
-
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    // dynamic User hacking by Hux
-    var _user = '{{site.duoshuo_username}}';
-
-    // duoshuo comment query.
-    var duoshuoQuery = {short_name: _user };
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-{% endif %}
 
 
 {% if site.disqus_username %}

@@ -1,22 +1,22 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: Zexi Blog
+SEOTitle: 泽熙的博客 | Zexi Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "https://huangxuan.me"              # your host, for absolute URL
+email: zexihan@163.com
+description: "关于数据科学与艺术 | 韩泽熙，All about Data Science and Art | 这里是 @韩泽熙 的个人博客，与你一起发现更大的世界。"
+keyword: "韩泽熙, 沢熙Liam, Liam, CS, 韩泽熙的博客, Zexi Blog, 博客, 个人网站, 互联网, 机器学习, 数据科学, 算法, 艺术"
+url: "http://zexihan.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-twitter_username:   huxpro
-#facebook_username:  huxpro
+weibo_username:     zexihan
+zhihu_username:     zexihan
+github_username:    zexihan
+#twitter_username:   zexihan
+facebook_username:  jersey.han
 # linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -48,7 +48,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+disqus_username: zexihan
 
 # Netease setttings
 netease_comment: false

@@ -7,7 +7,7 @@ Hi, I am Zexi Han, a grad student pursuing M.S. in Data Science at Northeastern 
 
 I am enthusiastic about exploring the power of data science. To get myself into this field, I make efforts to gain an insight into various machine learning algorithms and have a keen interest in applying them to real-world scenarios bringing convenience to people's life. Before coming to the US, I got the Degree of Bachelor of Science (Engineering) with First Class Honors in Telecommunications Engineering with Management from the Joint Program between BUPT and QMUL. My undergraduate final project during my internship in CASIA was elected as the BUPT Outstanding Final Project.
 
-Some of my projects，👉 click [Portfolio](/portfolio)、[Github](http://github.com/zexihan)。 
+Some of my projects，👉 click [Portfolio](/blog/portfolio)、[Github](http://github.com/zexihan)。 
 
 ##### Experiences
 

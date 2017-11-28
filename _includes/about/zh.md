@@ -7,7 +7,7 @@ Hey，我是韩泽熙，多出没于[博客](https://huangxuan.me)、[微博](we
 
 我对数据科学领域的探索充满热情。为了使我真正进入这一领域，我努力学习各种机器学习算法并热衷于将它们应用于实际情境中给人们的生活带来方便。在留学美国之前，我获得了北京邮电大学与伦敦玛丽女王大学联合授予的一等工学学士荣誉学位。我在中科院自动化所实习期间所做的本科毕设也被推选为北邮优秀毕业设计。
 
-做过的一些项目，👉 戳 [Portfolio](/portfolio)、[Github](http://github.com/zexihan)。 
+做过的一些项目，👉 戳 [Portfolio](/blog/portfolio)、[Github](http://github.com/zexihan)。 
 
 ##### 经历
 

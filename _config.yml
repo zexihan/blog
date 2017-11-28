@@ -6,7 +6,7 @@ email: zexihan@163.com
 description: "关于数据科学与艺术 | 韩泽熙，All about Data Science and Art | 这里是 @韩泽熙 的个人博客，与你一起发现更大的世界。"
 keyword: "韩泽熙, 沢熙Liam, Liam, CS, 韩泽熙的博客, Zexi Blog, 博客, 个人网站, 互联网, 机器学习, 数据科学, 算法, 艺术"
 url: "http://zexihan.com"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/blog"                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 

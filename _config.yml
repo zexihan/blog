@@ -17,7 +17,7 @@ zhihu_username:     zexihan
 github_username:    zexihan
 #twitter_username:   zexihan
 facebook_username:  jersey.han
-# linkedin_username:  firstname-lastname-idxxxx
+linkedin_username:  zexihan
 
 
 
@@ -60,14 +60,14 @@ netease_comment: false
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_track_id: 'UA-110336351-1'            # Format: UA-xxxxxx-xx
 ga_domain: zexihan.com/blog
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
+sidebar-about-description: "看看数据，写写算法<br>享受过程"
 sidebar-avatar: /img/zexihan.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

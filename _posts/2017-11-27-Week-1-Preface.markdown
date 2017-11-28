@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Week 1 - Introducing Recommender Systems"
+title:      "Week 1 - Preface"
 subtitle:   "Introduction to Recommender Systems: Non-Personalized and Content-Based"
 date:       2017-11-27
 author:     "Zexi"
@@ -10,7 +10,7 @@ tags:
     - Recommender Systems
 ---
 
-## Intro to Recommender Systems
+## Preface
 
 #### Recommenders
 

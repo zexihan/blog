@@ -4,13 +4,13 @@ title:      "More recurrences and the master theorem"
 subtitle:   "Algorithms"
 date:       2017-09-13
 author:     "Zexi"
-header-img: "img/post-bg-digital-native.jpg"
+header-img: "img/post-bg-unix-linux.jpg"
 catalog: true
 tags:
     - Algorithms
 ---
 
-[Lecture Notes](https://zexihan.com/blog/docs/algorithms/CS161Lecture02.pdf)
+[Lecture Notes](/blog/docs/algorithms/CS161Lecture02.pdf)
 
 Relevant reading:
 

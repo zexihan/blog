@@ -4,17 +4,17 @@ title:      "Finding Strongly Connected Components"
 subtitle:   "Algorithms"
 date:       2017-10-25
 author:     "Zexi"
-header-img: "img/post-bg-digital-native.jpg"
+header-img: "img/post-bg-unix-linux.jpg"
 catalog: true
 tags:
     - Algorithms
 ---
 
-[Lecture Notes](https://zexihan.com/blog/docs/algorithms/CS161Lecture09.pdf)
+[Lecture Notes](/blog/docs/algorithms/CS161Lecture09.pdf)
 
-[IPython Notebook: SCC](https://zexihan.com/blog/docs/algorithms/lecture10_scc.html)
+[IPython Notebook: SCC](/blog/docs/algorithms/lecture10_scc.html)
 
-[auxiliary .py file for IPython Notebook](https://zexihan.com/blog/docs/algorithms/graphStuff.py)
+[auxiliary .py file for IPython Notebook](/blog/docs/algorithms/graphStuff.py)
 
 Relevant reading:
 

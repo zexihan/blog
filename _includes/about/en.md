@@ -3,11 +3,15 @@
 > Yet another man.
 
 
-Hi, I am Zexi Han, a grad student pursuing M.S. in Data Science at Northeastern University, Boston. I work as a data science intern at [Rue La La](https://www.ruelala.com).
+Hi, I am Zexi Han, a grad student pursuing M.S. in Data Science at Northeastern University, Boston. And I work as a data science intern at [Rue La La](https://www.ruelala.com) from January 2018.
 
 I am enthusiastic about exploring the power of data science. To get myself into this field, I make efforts to gain an insight into various machine learning algorithms and have a keen interest in applying them to real-world scenarios bringing convenience to people's life. Before coming to the US, I got the Degree of Bachelor of Science (Engineering) with First Class Honors in Telecommunications Engineering with Management from the Joint Program between BUPT and QMUL. My undergraduate final project during my internship in CASIA was elected as the BUPT Outstanding Final Project.
 
-Some of my projects，👉 click [Portfolio](/blog/portfolio)、[Github](http://github.com/zexihan)。 
+Some of my projects，👉 click [Portfolio](/blog/portfolio), [Github](http://github.com/zexihan). 
+
+Research interests：Data Science, Machine Learning, Computer Vision, Nature Language Processing, Parallel Computing, Distributed Computing. 
+
+[Resume](/blog/docs/Resume_Zexi_Han.pdf)
 
 ##### Experiences
 

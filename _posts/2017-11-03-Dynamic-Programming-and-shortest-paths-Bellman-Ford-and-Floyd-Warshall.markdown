@@ -4,15 +4,15 @@ title:      "Dynamic Programming and shortest paths: Bellman-Ford and Floyd-Wars
 subtitle:   "Algorithms"
 date:       2017-11-03
 author:     "Zexi"
-header-img: "img/post-bg-digital-native.jpg"
+header-img: "img/post-bg-unix-linux.jpg"
 catalog: true
 tags:
     - Algorithms
 ---
 
-[Lecture Notes](https://zexihan.com/blog/docs/algorithms/CS161Lecture11.pdf)
+[Lecture Notes](/blog/docs/algorithms/CS161Lecture11.pdf)
 
-[IPython Notebook: computing Fibonacci numbers](https://zexihan.com/blog/docs/algorithms/lecture12_dp.html)
+[IPython Notebook: computing Fibonacci numbers](/blog/docs/algorithms/lecture12_dp.html)
 
 Relevant reading:
 

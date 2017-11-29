@@ -4,17 +4,17 @@ title:      "Dijkstra's Algorithm and Bellman-Ford"
 subtitle:   "Algorithms"
 date:       2017-10-28
 author:     "Zexi"
-header-img: "img/post-bg-digital-native.jpg"
+header-img: "img/post-bg-unix-linux.jpg"
 catalog: true
 tags:
     - Algorithms
 ---
 
-[Lecture Notes](https://zexihan.com/blog/docs/algorithms/CS161Lecture10.pdf)
+[Lecture Notes](/blog/docs/algorithms/CS161Lecture10.pdf)
 
-[IPython Notebook: Dijkstra](https://zexihan.com/blog/docs/algorithms/lecture11_dijkstra.html)
+[IPython Notebook: Dijkstra](/blog/docs/algorithms/lecture11_dijkstra.html)
 
-[auxiliary .py file for IPython Notebook](https://zexihan.com/blog/docs/algorithms/graphStuff1.py)
+[auxiliary .py file for IPython Notebook](/blog/docs/algorithms/graphStuff1.py)
 
 Relevant reading:
 

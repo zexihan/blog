@@ -4,13 +4,13 @@ title:      "Binary Search Trees and Red-Black Trees"
 subtitle:   "Algorithms"
 date:       2017-10-12
 author:     "Zexi"
-header-img: "img/post-bg-digital-native.jpg"
+header-img: "img/post-bg-unix-linux.jpg"
 catalog: true
 tags:
     - Algorithms
 ---
 
-[Lecture Notes](https://zexihan.com/blog/docs/algorithms/CS161Lecture06.pdf)
+[Lecture Notes](/blog/docs/algorithms/CS161Lecture06.pdf)
 
 Relevant reading:
 

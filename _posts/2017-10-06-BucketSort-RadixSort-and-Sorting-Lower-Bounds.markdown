@@ -4,17 +4,17 @@ title:      "BucketSort, RadixSort, and Sorting Lower Bounds"
 subtitle:   "Algorithms"
 date:       2017-10-06
 author:     "Zexi"
-header-img: "img/post-bg-digital-native.jpg"
+header-img: "img/post-bg-unix-linux.jpg"
 catalog: true
 tags:
     - Algorithms
 ---
 
-[Lecture Notes](https://zexihan.com/blog/docs/algorithms/CS161Lecture05.pdf)
+[Lecture Notes](/blog/docs/algorithms/CS161Lecture05.pdf)
 
-[IPython Notebook: RadixSort](https://zexihan.com/blog/docs/algorithms/lecture6_bucketSort.html)
+[IPython Notebook: RadixSort](/blog/docs/algorithms/lecture6_bucketSort.html)
 
-[auxiliary .py file for IPython Notebook](https://zexihan.com/blog/docs/algorithms/lecture6_aux.py)
+[auxiliary .py file for IPython Notebook](/blog/docs/algorithms/lecture6_aux.py)
 
 Relevant reading:
 

@@ -11,7 +11,7 @@ Hey，我是韩泽熙，多出没于[博客](https://zexihan.com/blog)、[微博
 
 做过的一些项目，👉 戳 [Portfolio](/blog/portfolio)、[Github](http://github.com/zexihan)。 
 
-[简历 | Resume](/blog/docs/Resume_Zexi_Han.pdf)
+[__简历__](/blog/docs/Resume_Zexi_Han.pdf)
 
 ##### 经历
 

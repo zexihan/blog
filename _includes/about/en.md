@@ -11,7 +11,7 @@ Some of my projects，👉 click [Portfolio](/blog/portfolio), [Github](http://g
 
 Research interests：Data Science, Machine Learning, Computer Vision, Nature Language Processing, Parallel Computing, Distributed Computing. 
 
-[Resume](/blog/docs/Resume_Zexi_Han.pdf)
+[__Resume__](/blog/docs/Resume_Zexi_Han.pdf)
 
 ##### Experiences
 

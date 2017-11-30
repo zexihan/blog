@@ -16,9 +16,10 @@ Research interests：Data Science, Machine Learning, Computer Vision, Nature Lan
 ##### Experiences
 
 - 01/2018-08/2018 Data Science Intern @ Rue La La, Boston
+- 09/2017-12/2017 Teaching Assistant - Machine Learning @ Northeastern University, Boston
 - 01/2017-Present MS Candidate in Data Science @ Northeastern University, Boston
-- 05/2016-07/2016 Research Assistant @ Tsinghua University
-- 08/2015-06/2016 Research Assistant @ Chinese Academy of Sciences
+- 05/2016-07/2016 Research Assistant - HCI @ Tsinghua University
+- 08/2015-06/2016 Research Assistant - Deep Learning @ Chinese Academy of Sciences
 - 09/2012-07/2016 BS in EE @ Queen Mary University of London
 - 09/2012-07/2016 BS in EE @ Beijing University of Posts and Telecommunications
 

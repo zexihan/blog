@@ -12,8 +12,6 @@ tags:
 
 # Algorithms Review
 
-
-
 ## (0) NP-Completeness
 
 ### Reductions

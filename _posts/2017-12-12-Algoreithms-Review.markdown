@@ -1,24 +1,14 @@
-
-
+---
 layout:     post
-
 title:      "Algorithms Review"
-
 subtitle:   "Algorithms"
-
 date:       2017-12-12
-
 author:     "Zexi"
-
 header-img: "img/post-bg-unix-linux.jpg"
-
 catalog: true
-
 tags:
-
-​    \- Algorithms
-
-\---
+​    - Algorithms
+---
 
 # Algorithms Review
 

@@ -6,16 +6,14 @@ email: zexihan@163.com
 description: "关于数据科学与艺术 | 韩泽熙，All about Data Science and Art | 这里是 @韩泽熙 的个人博客，与你一起发现更大的世界。"
 keyword: "韩泽熙, 沢熙Liam, Liam, 韩泽熙的博客, Zexi Blog, 博客, 机器学习, 数据科学, 算法, 艺术"
 url: "http://zexihan.com"              # your host, for absolute URL
-baseurl: "/blog"                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/blog"                       # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     zexihan
-zhihu_username:     zexihan
 github_username:    zexihan
-#twitter_username:   zexihan
+instagram_username:   bloomingliam
 facebook_username:  jersey.han
 linkedin_username:  zexihan
 
@@ -67,7 +65,7 @@ ga_domain: zexihan.com/blog
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "看看数据，写写算法<br>享受过程"
+sidebar-about-description: "Yet another man<br>喜欢新的自己"
 sidebar-avatar: /blog/img/zexihan.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -85,9 +83,9 @@ service-worker: true
 
 
 # Fri# Friends
-friends: [
-    {
-        title: "Mandy Lee",
-        href: "http://www.mandymanli.com/"
-    }
-]
+# friends: [
+#     {
+#         title: "",
+#         href: ""
+#     }
+# ]

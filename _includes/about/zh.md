@@ -11,6 +11,7 @@ Hey，我是韩泽熙，目前在美国波士顿的东北大学读研究生，�
 做过的一些项目，👉 戳 [Portfolio](/blog/portfolio)、[Github](http://github.com/zexihan)。 
 
 [__中文简历.pdf__](/blog/docs/简历_韩泽熙.pdf)
+
 [__英文简历.pdf__](/blog/docs/Resume_Zexi_Han.pdf)
 
 ##### 经历

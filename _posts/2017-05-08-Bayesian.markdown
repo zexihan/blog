@@ -1,0 +1,11 @@
+---
+layout:     post
+title:      "Bayesian"
+subtitle:   "Machine Learning"
+date:       2017-05-08
+author:     "Zexi"
+header-img: "img/post-bg-unix-linux.jpg"
+catalog: true
+tags:
+    - Machine Learning
+---

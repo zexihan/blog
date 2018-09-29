@@ -10,6 +10,16 @@ tags:
     - Algorithms
 ---
 
+# Master Theorem
+
+$$y=ax+b$$
+
+
+
+awcac \(y=ax+b\)
+
+
+
 [Lecture Notes](/blog/docs/algorithms/CS161Lecture02.pdf)
 
 Relevant reading:

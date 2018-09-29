@@ -16,7 +16,7 @@ $$y=ax+b$$
 
 
 
-awcac \(y=ax+b\)
+awcac $y=ax+b$ .
 
 
 

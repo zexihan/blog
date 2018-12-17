@@ -265,7 +265,6 @@ header img{
 .cbp_tmlabel ul li.skill>a{
     display: block;
 	float: left;
-	overflow:hidden;
     font-size: 1.3rem;
     width: auto;
     height: 40px;

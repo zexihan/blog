@@ -82,6 +82,7 @@ body, html {
 }
 
 .cbp_tmtimeline > li .cbp_tmlabel h2 {
+	overflow: visible;
 	font-weight: bold;
 	font-size: 15px;
 	padding: 14px 20px;

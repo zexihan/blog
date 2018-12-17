@@ -9,3 +9,35 @@ catalog: true
 tags:
     - Machine Learning
 ---
+
+# Principle Components Analysis
+
+When faced with a large set of correlated variables, principal components allow us to summarize this set with a smaller number of representative variables that collectively explain most of the variability in the original set. The principal component directions are directions in feature space along which the original data are highly variable.
+
+**PCA Algorithm**
+
+- Reduce data from $n$-dimensions to $k$-dimensions $X \in \mathcal{R}^{m\times n}$
+
+- After mean normalization (ensure every feature has zero mean) and optionally feature scaling
+
+- Compute "covariance matrix":
+
+  $$\Sigma=\frac{1}{m}\sum_{i=1}^{n}(x^{(i)})(x^{(i)})^T$$ 
+
+  Sigma = (1/m)\*X'\*X; $Sigma \in \mathcal{R}^{n\times n}$
+
+- Compute "eigenvectors" of matrix $\Sigma$:
+
+  [U,S,V] = svd(Sigma); or eig(Sigma);
+
+- From [U,S,V] = svd(Sigma), we get:
+
+  $$U=\begin{bmatrix}
+  ​    | & | &  & | \\
+  ​    u^{(1)} & u^{(2)} & ... & u^{(n)}  \\
+  ​    | & | &  & | \\
+  \end{bmatrix}\in \mathcal{R}^{n\times n}$$
+
+- Ureduce = U(:,1:k); $Ureduce \in \mathcal{R}^{n\times k}$
+- z = Ureduce'*x; $z \in \mathcal{R}^{k\times n}$
+
